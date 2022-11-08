@@ -162,8 +162,9 @@ def main():
 
     #We verify with the node command testmempoolaccept if the transaction is valid. 
     mempool = proxy.testmempoolaccept([signed_tx])
+    mempool0 = mempool[0]
     #If it is valid, broadcast the transaction.
-    if mempool["allowed"] == True:
+    if mempool0["allowed"] == True:
         send_transaction = proxy.sendrawtransaction(signed_tx)
 
 if __name__ == "__main__":
