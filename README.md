@@ -22,7 +22,7 @@
 
 #To enter the environment: 
 source session3_env/bin/activate
-(session3_env) raquel@raquel-GS65-Stealth-8SE:~$ source session3_env/bin/activate
+(session3_env) ~$ source session3_env/bin/activate
 
 
 #Once in the python session, we can execute the first script: carrasco_raquel_script.py
@@ -49,7 +49,6 @@ source session3_env/bin/activate
 #---------------------------------------------------------
 #Now execute the first script with the python command:
 
-	(session3_env) ~$ python carrasco_raquel_script1.py
 
 #It will ask first for your rpcuser: 
 	Please, introduce your rpc user: "admin" #I introduced admin, since it is my rpcuser, but you have to introduce your rpcuser.
@@ -67,9 +66,7 @@ source session3_env/bin/activate
 #-------------------------------------------------------------
 
 #If the same address that is in this example is used, would be some UTXOs on the P2SH address, but it has been just created, would be necessary to send some bitcoins to the new P2SH address to have UTXOs to spend from.
-
-#Now we can execute the second script with the python command:
-  	(session3_env) ~$ python carrasco_raquel_script2.py	
+	
 
 #We will need to introduce again the rpcuser and the password. 
 #After we will need to introduce the first two Private Keys and one PublicKey, which corresponds with the three PublicKeys used to create the P2SH address. It will check again if are valid, and none of them is repeated. 
